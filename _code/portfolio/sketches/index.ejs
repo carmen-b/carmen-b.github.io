@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-6 col-md-3">
+        <% public.portfolio.sketches.images._contents.forEach(function (image) { %>
+            <a href="#" class="thumbnail">
+                <img data-src="images/<%= image %>">
+            </a>
+        <% }); %>
+    </div>
+</div>
+
+<%= JSON.stringify(current) %>
