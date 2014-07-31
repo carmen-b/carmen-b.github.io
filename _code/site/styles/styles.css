@@ -24,7 +24,7 @@ body {
 .footer {
     color:#707E8C;
 	width:100%;
-	height:200px;
+	height: 82px;
 	position:absolute;
 	background:#283646;
     padding-top: 30px;
@@ -35,7 +35,7 @@ body {
 
 .footer-navbar {
     display: inline-block;
-    color: #707E8C;
+    color: #73879C;
 }
 .footer-navbar li {
     display: inline-block;
@@ -59,4 +59,30 @@ body {
 .footer-navbar a:hover {
     color:#1ABB9C;
     text-decoration: none;
+}
+
+.footer-up {
+    background-color:#2F4052; 
+    color: #707E8C;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+container-up .row {
+    display: inline-block;
+}
+
+.container-up .row {
+  display: inline-block;  
+}
+
+.container-up {
+    width: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
