@@ -1,10 +1,20 @@
 
 body {
     background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
+a { 
+    color: inherit;
+}
+
+a:hover {
+    color: #1ABB9C;
+    text-decoration: none;
+}
+
+
 .navbar li > a.nav-link {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -21,22 +31,43 @@ body {
     padding-top: 18px;
 }
 
+.navbar .dropdown.open {
+    background-color: #F5F7FA;
+}
+
+ .dropdown-menu > li > a {
+    border-top: 1px solid #ccc;
+    border-radius: none;
+    background-clip: padding-box;
+    color: white;
+}
+
+.dropdown-menu > li > a:hover.nav-link {
+   color: white;
+   background: #1ABB9C;
+}
+
+
+dropdown-menu .nav-link {
+   color: #FFF;
+}
+
+.page {
+    min-height: 400px;
+}
+
 .footer {
     color:#707E8C;
-	width:100%;
-	height: 82px;
-	position:absolute;
 	background:#283646;
     padding-top: 30px;
     padding-bottom: 30px;
-    left: 0;
-    bottom:0;
 }
 
 .footer-navbar {
     display: inline-block;
     color: #73879C;
 }
+
 .footer-navbar li {
     display: inline-block;
     margin-left: 10px;
@@ -52,10 +83,6 @@ body {
     display: none;
 }
 
-.footer-navbar a {
-    color:#707E8C;
-}
-
 .footer-navbar a:hover {
     color:#1ABB9C;
     text-decoration: none;
@@ -64,41 +91,18 @@ body {
 .footer-up {
     background-color:#2f4052; 
     color: #A3B1BF;
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 100%;
-    height: 350px;
-    position: absolute;
     line-height: 20px;
-    padding-top: 30px;
     padding-bottom: 30px;
-    left: 0;
-    bottom:0;
 }
 
- .h4 li > a:hover{
-    color: #1ABB9C;
-    text-decoration: none;
-}
-
-.col-md-4 h4{
-    font-family: 'Source Sans Pro', sans-serif;
+.footer-up h4 {
     color: white;
     text-transform: uppercase;
-    display: inline-block;
+    margin-top: 30px;
 }
 
-.container-up {
-    width: 980px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
-
- .txt-btn a:hover{
-    color: #707E8C;
-    text-decoration: none;
+.whitelogo {
+    margin-bottom: 8px;
 }
 
 a:hover .whitelogo {
@@ -109,28 +113,6 @@ a:hover .whitelogo {
     list-style: none;
     padding-left: 2px;
     line-height: 20px;
-    color: #707E8C;
-}
-
-.contacts a:hover {
-    color: #1ABB9C;
-    text-decoration: none;
-}
-
- .dropdown-menu>li>a {
-    border-top: 1px solid #ccc;
-    border-radius: none;
-    background:white;
-    background-clip: padding-box;
-    color: white;
-}
-
-.dropdown-menu>li>a:hover {
-   color: white;
-   background: #1ABB9C;
 }
 
 
-dropdown-menu .nav-link {
-   color: #FFF;
-}

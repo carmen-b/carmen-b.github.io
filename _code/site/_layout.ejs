@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carmen Balaban</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -17,77 +16,82 @@
 </head>
 
 <body>
-
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png">
-                </a>
+    <header>
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link js-activated" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="nav-link" href="#">All</a>
+                                </li>
+                                <li><a class="nav-link" href="#">Branding</a>
+                                </li>
+                                <li><a class="nav-link" href="#">Print Design</a>
+                                </li>
+                                <li><a class="nav-link" href="#">Stationery</a>
+                                </li>
+                                <li><a class="nav-link" href="#">Illustration</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li><a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </li>
+                </div>
+                </ul>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle nav-link js-activated" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="nav-link" href="#">All</a>
-                            </li>
-                            <li><a class="nav-link" href="#">Branding</a>
-                            </li>
-                            <li><a class="nav-link" href="#">Print Design</a>
-                            </li>
-                            <li><a class="nav-link" href="#">Stationery</a>
-                            </li>
-                            <li><a class="nav-link" href="#">Illustration</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li><a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    </li>
-            </div>
-            </ul>
         </div>
-    </div>
-    <div class="home-image"></div>
-    </div>
-    <div class="container">
+    </header>
+    
+    <main>
+        <div class="container page">
 
-        <%-yield %>
+            <%-yield %>
 
-    </div>
+        </div>
+    </main>
 
-<div class="footer-up">
-    <div class="container-up">
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Who am I</h4>
-                <a href="index.html">
-                <img class="whitelogo" src="images/logowhite.png"></a>
-            <p> Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-            <a href="about.html" class="txt-btn">More about me</a>
-            </div>
-            <div class="col-md-4">
-                <h4>Latest Works</h4></div>
-            <div class="col-md-4">
-                <h4>Get in Touch</h4>
-            <p>This should be the place where you can contact me. It's just as simple as that.</p>
-           <ul class="contacts">
-               <li><i class="glyphicon glyphicon-phone"></i> +40 765 275 808 </li>
-               <a href="#"><i class="glyphicon glyphicon-envelope"></i> carmenbalaban@gmail.com
+    <footer>
+    <div class="footer-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Who am I</h4>
+                    <a href="index.html">
+                        <img class="whitelogo" src="images/logowhite.png">
+                    </a>
+                    <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                    <a href="about.html" class="txt-btn">More about me</a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Latest Works</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Get in Touch</h4>
+                    <p>This should be the place where you can contact me. It's just as simple as that.</p>
+                    <ul class="contacts">
+                        <li><i class="glyphicon glyphicon-phone"></i> +40 765 275 808</li>
+                        <a href="#"><i class="glyphicon glyphicon-envelope"></i> carmenbalaban@gmail.com
                    </a>
-               </ul>
-            </div>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -107,6 +111,8 @@
             </ul>
         </div>
     </div>
+</footer>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
