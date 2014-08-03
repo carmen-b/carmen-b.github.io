@@ -109,6 +109,11 @@ a:hover .whitelogo {
     opacity: .6;
 }
 
+.thumbs.gap-xs .thumb{
+    margin-bottom:10px;
+    padding-left: 10px;
+}
+
 .contacts {
     list-style: none;
     padding-left: 2px;
