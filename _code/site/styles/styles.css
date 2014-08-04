@@ -8,11 +8,25 @@ a {
     color: inherit;
 }
 
+h1 {
+font-size: 44px;
+line-height: 130%;
+margin-bottom: 25px;
+font-weight: 599;
+color: #506A85;
+letter-spacing: 0.025em;
+}
+
 a:hover {
     color: #1ABB9C;
     text-decoration: none;
 }
 
+header p {
+    font-size: 22px;
+    line-height: 150%;
+    color: #506A85;
+}
 
 .navbar li > a.nav-link {
     font-size: 15px;
@@ -46,7 +60,6 @@ a:hover {
    color: white;
    background: #1ABB9C;
 }
-
 
 dropdown-menu .nav-link {
    color: #FFF;
@@ -112,6 +125,12 @@ a:hover .whitelogo {
 .thumbs.gap-xs .thumb {
     margin-bottom: 10px;
     padding-left: 10px;
+    padding-right:0px;
+    padding-top: 0px;S
+}   
+    
+.thumbs.gap-xs a:hover {
+    background-color: #1ABB9C;
 }
 
 .contacts {
@@ -120,4 +139,10 @@ a:hover .whitelogo {
     line-height: 20px;
 }
 
+.text-center{
+    text-align: center;
+}
 
+.center-block{
+ float: none;   
+}
