@@ -1,0 +1,11 @@
+<%
+    if (current.path.length==3 ) { 
+        partName='portfolio/_category.ejs'; 
+    } else if (current.path.length==4 ) { 
+        partName='portfolio/_item.ejs'; 
+    } else { %>
+    <p>
+        TODO all the items from portfolio.
+    </p>
+    <% }
+%>

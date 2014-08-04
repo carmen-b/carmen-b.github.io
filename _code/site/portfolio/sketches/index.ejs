@@ -1,14 +1,10 @@
 <div class="row">
     <div class="col-xs-6 col-md-3">
-        <% 
-          console.log(public['portfolio']);
-           var images = public.portfolio.sketches.images._contents;
-           images.forEach(function (image) { %>
-            <a href="#" class="thumbnail">
-                <img data-src="images/<%= image %>">
-            </a>
-        <% }); %>
+
+
     </div>
 </div>
 
 <%= JSON.stringify(current) %>
+<%- include ../../_test.ejs %>
+<%- testf(1) %>

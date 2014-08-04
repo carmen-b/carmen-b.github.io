@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carmen Balaban</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -63,9 +63,11 @@
 
     <main>
         <div class="container page">
-
-            <%-yield %>
-
+            <% if (current.path[0]=='portfolio' ) { %>
+                <%- partial( 'portfolio/_all.ejs') %>
+                    <% } else { %>
+                        <%-yield %>
+                            <% } %>
         </div>
     </main>
 
