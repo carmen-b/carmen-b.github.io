@@ -8,13 +8,36 @@ a {
     color: inherit;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 h1 {
-font-size: 44px;
-line-height: 130%;
-margin-bottom: 25px;
-font-weight: 599;
-color: #506A85;
-letter-spacing: 0.025em;
+    font-size: 44px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #506A85;
+    letter-spacing: 0.025em;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #506A85;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-block {
+    float: none;   
 }
 
 a:hover {
@@ -25,7 +48,7 @@ a:hover {
 header p {
     font-size: 22px;
     line-height: 150%;
-    color: #506A85;
+    color: #73879C;
 }
 
 .navbar li > a.nav-link {
@@ -45,15 +68,12 @@ header p {
     padding-top: 18px;
 }
 
-.navbar .dropdown.open {
-    background-color: #F5F7FA;
-}
-
  .dropdown-menu > li > a {
     border-top: 1px solid #ccc;
     border-radius: none;
     background-clip: padding-box;
     color: white;
+    background-color: #F5F7FA;
 }
 
 .dropdown-menu > li > a:hover.nav-link {
@@ -62,11 +82,15 @@ header p {
 }
 
 dropdown-menu .nav-link {
-   color: #FFF;
+    color: #FFF;
 }
 
 .page {
     min-height: 400px;
+}
+
+p {
+color: #73879C;
 }
 
 .footer {
@@ -126,7 +150,7 @@ a:hover .whitelogo {
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right:0px;
-    padding-top: 0px;S
+    padding-top: 0px;
 }   
     
 .thumbs.gap-xs a:hover {
@@ -139,10 +163,12 @@ a:hover .whitelogo {
     line-height: 20px;
 }
 
-.text-center{
-    text-align: center;
+::selection {
+    background: #AAF2E4;
+    color: #506A85;
 }
 
-.center-block{
- float: none;   
+::-moz-selection {
+    background: #AAF2E4;
+    color: #506A85;
 }
