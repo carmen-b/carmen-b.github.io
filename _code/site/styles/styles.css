@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    font-size: 20px;
+    font-size: 22px;
 }
 a { 
     color: inherit;
@@ -14,6 +14,11 @@ a {
 
 p {
     margin-bottom: 20px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 h1 {
@@ -90,7 +95,8 @@ header p {
 }
 
 .page {
-    min-height: 400px;
+    padding-top: 40px;
+    padding-bottom: 120px;
 }
 
 .social li {
@@ -104,9 +110,39 @@ header p {
 .border-left .contacts {
     font-size: 18px;
 }
-.form-group input {
-    background: #F8FAFD;
+
+.form-group {
+    font-size: 14px;
+    line-height: 25px;
+    color: #73879C;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    background-color: #F8FAFD;
     border-radius: 3px;
+    height: 40px;
+    resize: none;
+} 
+
+.btn-submit {
+    text-transform: uppercase;
+    background-color: #1ABB9C;
+    color: #FFF;
+    padding: 11px 20px 13px;
+    margin: 15px 0;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border: none;
+}
+
+.btn:hover {
+    background-color:#17A78B;
+    color: #FFF;
+    text-transform: uppercase;
 }
 
 .footer {
@@ -193,3 +229,4 @@ a:hover .whitelogo {
     background: #AAF2E4;
     color: #506A85;
 }
+
