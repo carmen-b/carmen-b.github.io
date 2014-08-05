@@ -93,6 +93,22 @@ header p {
     min-height: 400px;
 }
 
+.social li {
+    list-style: none; 
+}
+
+.border-left p {
+    font-size: 18px;
+}
+
+.border-left .contacts {
+    font-size: 18px;
+}
+.form-group input {
+    background: #F8FAFD;
+    border-radius: 3px;
+}
+
 .footer {
     color:#707E8C;
 	background:#283646;
