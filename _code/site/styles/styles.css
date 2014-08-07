@@ -21,6 +21,10 @@ p {
     margin-right: -15px;
 }
 
+.ul {
+    margin-top: 0;
+}
+
 h1 {
     font-size: 44px;
     line-height: 130%;
@@ -44,6 +48,7 @@ h2 {
 
 .text-center {
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .center-block {
@@ -77,11 +82,11 @@ header p {
     padding-top: 18px;
 }
 
- .dropdown-menu > li > a {
+.dropdown-menu > li > a {
     border-top: 1px solid #ccc;
     border-radius: none;
     background-clip: padding-box;
-    color: white;
+    color: #FFF;
     background-color: #F5F7FA;
 }
 
@@ -97,6 +102,47 @@ header p {
 .page {
     padding-top: 40px;
     padding-bottom: 120px;
+}
+
+.filter {
+    margin-bottom: 40px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    padding: 0;
+}
+
+.filter li:after {
+	content: "\00b7";
+}
+
+.filter:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-bottom: 1px solid #CED7E0; 
+}
+
+.filter li {
+    display: inline;
+    position: relative;
+    background: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: .031em;
+    text-transform: uppercase;
+    margin: 0 -2px;
+}
+
+.filter li a {
+    padding: 0 15px;
+}
+
+.filter li:last-child:after {
+    content: "";
 }
 
 .social li {
