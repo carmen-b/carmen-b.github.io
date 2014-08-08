@@ -23,6 +23,7 @@ p {
 
 .ul {
     margin-top: 0;
+    list-style: none;
 }
 
 h1 {
@@ -143,6 +144,31 @@ header p {
 
 .filter li:last-child:after {
     content: "";
+}
+
+.items {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.items.col-3 li {
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.items li .text-overlay {
+    background-color: #1ABB9C;
+    color: #FFF;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 100%;
+    transition: all 200ms ease-out;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .social li {
