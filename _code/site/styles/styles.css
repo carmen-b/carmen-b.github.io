@@ -102,7 +102,7 @@ header p {
 }
 
 .page {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 120px;
 }
 
@@ -181,17 +181,24 @@ header p {
     line-height: 160%;
 }
 
-.item-details{
+.item-details {
     list-style: none; 
     font-size: 16px;
     line-height: 140%;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #CED7E0;
 }
 
 .item-details li.date:before {
-    content: "\e82c";
-    
+    content: "\e82c"; 
+}
+
+
+.item-details li.url:before {
+    content: "\f30e";
 }
 
 .item-details li:before {
