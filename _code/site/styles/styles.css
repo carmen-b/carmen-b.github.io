@@ -45,6 +45,7 @@ h2 {
     color: #506A85;
     letter-spacing: 0.025em;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .text-center {
@@ -169,6 +170,34 @@ header p {
     transition: all 200ms ease-out;
     opacity: 0;
     overflow: hidden;
+}
+
+.item img {
+    width: 720px;
+}
+
+.text-small {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.item-details{
+    list-style: none; 
+    font-size: 16px;
+    line-height: 140%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.item-details li.date:before {
+    content: "\e82c";
+    
+}
+
+.item-details li:before {
+    content: "\e70d";
+    margin-right: 10px;
+    font-family: "fontello";
 }
 
 .social li {
