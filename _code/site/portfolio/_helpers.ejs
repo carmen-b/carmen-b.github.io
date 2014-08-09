@@ -1,0 +1,33 @@
+<%
+getContents = function (pathParts) {
+    var root = public;
+    for (var i = 0; i < pathParts.length; i++) {
+        if (!root) {
+            return [];
+        }
+        
+        root = root[pathParts[i]];
+    }
+    
+    if (!root) {
+        return [];
+    }
+    
+    return root._contents;
+}
+
+getCurrentImages = function() {
+    var allFiles = getContents(current.path.slice(0, current.path.length - 1));
+    var images = [];
+    for (var i = 0; i < allFiles.length; i++) {
+        var file = allFiles[i];
+        var lowFile = file.toLowerCase();
+        if (lowFile != 'thumb.jpg' && (lowFile.indexOf('.jpg') >= 0 || lowFile.indexOf('.png') >= 0)) {
+            images.push(file);
+        }
+    }
+    
+    return images;
+}
+
+%>
