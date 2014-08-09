@@ -1,3 +1,13 @@
-<%
-
-%>
+<div>
+    <%- yield %>
+</div>
+<ul>
+    <% var items=getCurrentItems(); for (var i=0 ; i < items.length; i++) { %>
+        <li>
+            <a href="<%= items[i].name %>.html">
+                <%=items[i].title %>
+                    <img src="<%= items[i].name %>-thumb.jpg">
+            </a>
+        </li>
+        <% } %>
+</ul>

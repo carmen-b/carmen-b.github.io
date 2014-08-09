@@ -1,9 +1,14 @@
 <h1>
-    <%= this.title %>
+    <%= title %>
 </h1>
 <p>
     <%- yield %>
 </p>
 <ul>
-    <% for (var%>
+    <% var images=getCurrentImages(); %>
+        <% for (var i=0 ; i < images.length; i++) { %>
+            <li>
+                <img src='<%= images[i] %>'>
+            </li>
+            <% } %>
 </ul>

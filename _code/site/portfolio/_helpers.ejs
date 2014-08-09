@@ -19,15 +19,30 @@ getContents = function (pathParts) {
 getCurrentImages = function() {
     var allFiles = getContents(current.path.slice(0, current.path.length - 1));
     var images = [];
+    var lowCurrent = current.source.toLowerCase();
+    
     for (var i = 0; i < allFiles.length; i++) {
         var file = allFiles[i];
         var lowFile = file.toLowerCase();
-        if (lowFile != 'thumb.jpg' && (lowFile.indexOf('.jpg') >= 0 || lowFile.indexOf('.png') >= 0)) {
+        if (lowFile.indexOf(lowCurrent) == 0 && lowFile.indexOf('thumb.jpg') < 0 && (lowFile.indexOf('.jpg') >= 0 || lowFile.indexOf('.png') >= 0)) {
             images.push(file);
         }
     }
     
     return images;
+}
+
+getCurrentItems = function () {
+    var allItems = public.portfolio[current.path[1]]._data;
+    var items = [];
+    for (var name in allItems) {
+        var item = allItems[name];
+        if (item.name != 'index') {
+            items.push({name: name, title: item.title});
+        }
+    }
+    
+    return items;
 }
 
 %>
