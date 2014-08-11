@@ -1,0 +1,13 @@
+<div>
+    <%- yield %>
+</div>
+<ul>
+    <% var items=getAllItems(); for (var i=0 ; i < items.length; i++) { var item = items[i]; %>
+        <li>
+            <a href="<%= item.category + '/' + item.name %>.html">
+                <%=item.title %>
+                    <img src="<%= item.category + '/' + item.name %>-thumb.jpg">
+            </a>
+        </li>
+        <% } %>
+</ul>

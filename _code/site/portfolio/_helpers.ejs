@@ -19,12 +19,11 @@ getContents = function (pathParts) {
 getCurrentImages = function() {
     var allFiles = getContents(current.path.slice(0, current.path.length - 1));
     var images = [];
-    var lowCurrent = current.source.toLowerCase();
+    var source = current.source;
     
     for (var i = 0; i < allFiles.length; i++) {
         var file = allFiles[i];
-        var lowFile = file.toLowerCase();
-        if (lowFile.indexOf(lowCurrent) == 0 && lowFile.indexOf('thumb.jpg') < 0 && (lowFile.indexOf('.jpg') >= 0 || lowFile.indexOf('.png') >= 0)) {
+        if (file.indexOf(source) == 0 && file.indexOf('thumb.jpg') < 0 && (file.indexOf('.jpg') >= 0 || file.indexOf('.png') >= 0)) {
             images.push(file);
         }
     }
@@ -32,8 +31,10 @@ getCurrentImages = function() {
     return images;
 }
 
-getCurrentItems = function () {
-    var allItems = public.portfolio[current.path[1]]._data;
+getCategoryItems = function (category) {
+    category = category || current.path[1];
+
+    var allItems = public.portfolio[category]._data;
     var items = [];
     for (var name in allItems) {
         var item = allItems[name];
@@ -44,5 +45,22 @@ getCurrentItems = function () {
     
     return items;
 }
+
+getAllItems = function () {
+    var categories = public.portfolio._data.index.categories;
+    var items = [];
+
+    for (var i = 0; i < categories.length; i++) {
+        var categoryItems = getCategoryItems(categories[i]);
+        for (var j = 0; j < categoryItems.length; j++) {
+            categoryItems[j].category = categories[i];
+        }
+        
+        items = items.concat(categoryItems);        
+    }
+    
+    return items;
+}
+
 
 %>
