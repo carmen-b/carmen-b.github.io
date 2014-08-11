@@ -27,6 +27,12 @@ p {
     list-style: none;
 }
 
+.container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 970px;
+}
+
 h1 {
     font-size: 44px;
     line-height: 130%;
@@ -47,6 +53,17 @@ h2 {
     letter-spacing: 0.025em;
     font-weight: 600;
     margin-top: 0;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    font-weight: 700;
+    color: #506A85;
+    margin-top: 0;   
 }
 
 .text-center {
@@ -152,29 +169,19 @@ header p {
     list-style: none; 
     margin: 0;
     padding: 0;
+    color: #FFF;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.items.col-3 li {
+.items .col-3 li {
+    width: 318px;
     margin-left: 8px;
     margin-bottom: 8px;
 }
 
-.items li .text-overlay {
-    background-color: #1ABB9C;
-    color: #FFF;
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 100%;
-    transition: all 200ms ease-out;
-    opacity: 0;
-    overflow: hidden;
-}
-
 .item img {
-    width: 720px;
 }
 
 .text-small {
@@ -191,7 +198,14 @@ header p {
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid #CED7E0;
-    
+}
+
+.items .text-overlay {
+    background-color: #1ABB9C;
+}
+
+.items li:hover .text-overlay {
+    opacity: 1;
 }
 
 .item-details li.date:before {
@@ -269,7 +283,7 @@ header p {
 }
 
  ul.contacts li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .social li {
@@ -282,6 +296,10 @@ header p {
 
 .border-left .contacts {
     font-size: 18px;
+}
+
+.social-network{
+    padding-top: 25px;
 }
 
 .footer {
@@ -326,12 +344,18 @@ header p {
     color: white;
     text-transform: uppercase;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-up p {
     color: #A3B1BF;
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+.txt-btn {
+    font-size: 105%;
+    font-weight: 700;
 }
 
 .whitelogo {
@@ -342,15 +366,30 @@ a:hover .whitelogo {
     opacity: .6;
 }
 
+.icon-overlay a .icn-more {
+    background-color: #1ABB9C;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+
 .thumbs.gap-xs .thumb {
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right:0px;
-    padding-top: 0px;
+    padding: 0 0 5px 5px;
 }   
     
 .thumbs.gap-xs a:hover {
     background-color: #1ABB9C;
+}
+
+col-xs-6 {
+    width: 50%;
+    float: left;
+    min-height: 1px;
 }
 
 .contacts {
@@ -358,6 +397,11 @@ a:hover .whitelogo {
     padding-left: 2px;
     line-height: 20px;
 }
+
+.icon-overlay a .icn-more {
+    background-color: #1ABB9C;
+}
+
 
 ::selection {
     background: #AAF2E4;
