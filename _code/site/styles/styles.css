@@ -8,6 +8,7 @@ body {
 main {
     font-size: 22px;
 }
+
 a { 
     color: inherit;
 }
@@ -186,16 +187,16 @@ header p {
     font-size: 16px;
     line-height: 140%;
     padding-left: 0;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 40px;
     padding-top: 40px;
     border-top: 1px solid #CED7E0;
+    
 }
 
 .item-details li.date:before {
     content: "\e82c"; 
 }
-
 
 .item-details li.url:before {
     content: "\f30e";
@@ -207,25 +208,14 @@ header p {
     font-family: "fontello";
 }
 
-.social li {
-    list-style: none; 
-}
-
-.border-left p {
-    font-size: 18px;
-}
-
-.border-left .contacts {
-    font-size: 18px;
-}
-
 .form-group {
+    color: #283645;
     font-size: 14px;
     line-height: 25px;
-    color: #73879C;
     vertical-align: middle;
     position: relative;
     width: 100%;
+    border-radius: 3px;
 }
 
 .form-control {
@@ -234,7 +224,19 @@ header p {
     border-radius: 3px;
     height: 40px;
     resize: none;
+    border: 1px solid #E6E9ED;
+    box-shadow: none;
 } 
+
+ textarea.form-control {
+    height: 150px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.form-control:hover {
+    border: 1px solid #ccc;
+}
 
 .btn-submit {
     text-transform: uppercase;
@@ -251,6 +253,35 @@ header p {
     background-color:#17A78B;
     color: #FFF;
     text-transform: uppercase;
+}
+
+.border-left {
+    border-left: 1px solid #CED7E0;
+    height: 480px;
+}
+
+.inner-right-sm {
+    padding-right: 45px;
+}
+
+.inner-left-sm {
+    padding-left: 45px;
+}
+
+ ul.contacts li {
+    margin-bottom: 5px;
+}
+
+.social li {
+    list-style: none; 
+}
+
+.border-left p {
+    font-size: 18px;
+}
+
+.border-left .contacts {
+    font-size: 18px;
 }
 
 .footer {
@@ -337,4 +368,3 @@ a:hover .whitelogo {
     background: #AAF2E4;
     color: #506A85;
 }
-
