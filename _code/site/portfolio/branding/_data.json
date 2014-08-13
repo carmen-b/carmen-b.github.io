@@ -1,6 +1,29 @@
-{ 
-    "asociatia-recreativ": {
-        "title": "Asociatia Re/Creativ"
+{
+    "mow": { 
+"title": "Memory of the World"
     }
-    
+}
+
+ {
+    "ocean-evenimente": { 
+"title": "Ocean Evenimente"
+    }
+}   
+
+{
+    "ocean-handmade": { 
+"title": "Ocean-handmade"
+    }
+}
+
+{
+    "parco-della-musica": { 
+"title": "Parco della Musica"
+    }
+}
+
+{ 
+    "recreativ": {
+        "title": "Asociatia Re/Creativ"
+    }   
 }
