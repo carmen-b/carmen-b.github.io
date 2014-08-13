@@ -4,11 +4,11 @@
 <p>
     <%- yield %>
 </p>
-<ul>
+<div id="portfolioItemCarrousel" class="owl-carousel owl-theme">
     <% var images=getCurrentImages(); %>
         <% for (var i=0 ; i < images.length; i++) { %>
-            <li>
+            <div class="item">
                 <img src='<%= images[i] %>'>
-            </li>
+            </div>
             <% } %>
-</ul>
+</div>

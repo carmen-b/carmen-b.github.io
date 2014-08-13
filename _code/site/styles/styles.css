@@ -20,7 +20,7 @@ p {
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-     color: #506A85;
+    color: #506A85;
     }
 
 h1 {
@@ -377,6 +377,11 @@ a:hover .whitelogo {
     background-color: #1ABB9C;
 }
 
+#portfolioItemCarrousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 ::selection {
     background: #AAF2E4;

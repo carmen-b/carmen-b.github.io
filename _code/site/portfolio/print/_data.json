@@ -1,29 +1,17 @@
 {
-    "calendar": { 
-"title": "Calendar Design"
-    }
-}
-
-{
-    "catalog": { 
-"title": "Catalogs"
-    }
-}
-
-{
-    "flyer": { 
-"title": "Flyers"
-    }
-}
-
-{
-    "pen-drive": { 
-"title": "Pen Drive"
-    }
-}
-
-{
-    "poster": { 
-"title": "Posters"
+    "calendar": {
+        "title": "Calendar Design"
+    },
+    "catalog": {
+        "title": "Catalogs"
+    },
+    "flyer": {
+        "title": "Flyers"
+    },
+    "pen-drive": {
+        "title": "Pen Drive"
+    },
+    "poster": {
+        "title": "Posters"
     }
 }
