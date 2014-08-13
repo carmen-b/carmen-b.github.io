@@ -17,30 +17,17 @@ p {
     margin-bottom: 20px;
 }
 
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.ul {
-    margin-top: 0;
-    list-style: none;
-}
-
-.container {
-    padding-right: 0;
-    padding-left: 0;
-    width: 970px;
-}
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+     color: #506A85;
+    }
 
 h1 {
     font-size: 44px;
     line-height: 130%;
     margin-bottom: 25px;
-    font-weight: 700;
-    color: #506A85;
     letter-spacing: 0.025em;
-    font-family: 'Lato', sans-serif;
     margin-top: 50px;
 }
 
@@ -48,21 +35,15 @@ h2 {
     font-size: 26px;
     line-height: 130%;
     margin-bottom: 20px;
-    font-family: 'Lato', sans-serif;
-    color: #506A85;
     letter-spacing: 0.025em;
-    font-weight: 600;
     margin-top: 0;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
     font-size: 20px;
     line-height: 150%;
     margin-bottom: 15px;
     padding-top: 15px;
-    font-weight: 700;
-    color: #506A85;
     margin-top: 0;   
 }
 
@@ -384,12 +365,6 @@ a:hover .whitelogo {
     
 .thumbs.gap-xs a:hover {
     background-color: #1ABB9C;
-}
-
-col-xs-6 {
-    width: 50%;
-    float: left;
-    min-height: 1px;
 }
 
 .contacts {
