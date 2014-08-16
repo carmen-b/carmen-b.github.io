@@ -1,13 +1,13 @@
 <div>
     <%- yield %>
 </div>
-<ul>
-    <% var items=getCategoryItems(); for (var i=0 ; i < items.length; i++) { %>
-        <li>
-            <a href="<%= items[i].name %>.html">
-                <%=items[i].title %>
-                    <img src="<%= items[i].name %>-thumb.jpg">
+<div class="row thumb-list">
+    <% var items=getCategoryItems(); for (var i=0 ; i < items.length; i++) { var item=items[i]; %>
+        <div class="col-sm-4 img-overlay">
+            <a href="<%= item.name %>.html" title="<%=item.title %>">
+                <i class="fa fa-plus"></i>
+                <img src="<%= item.name %>-thumb.jpg">
             </a>
-        </li>
+        </div>
         <% } %>
-</ul>
+</div>
