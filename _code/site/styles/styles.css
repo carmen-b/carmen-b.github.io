@@ -101,7 +101,6 @@ header p {
 .filter {
     position: relative;
     margin-bottom: 40px;
-
     display: block;
     padding: 0;
 }
@@ -138,7 +137,6 @@ header p {
 .filter li:last-child:after {
     content: "";
 }
-
 
 .form-group {
     color: #283645;
@@ -204,7 +202,6 @@ textarea.form-control {
     color: #FFF;
     text-transform: uppercase;
 }
-
 
 .thumb-list img {
     width: 100%;
@@ -349,7 +346,6 @@ a:hover .whitelogo {
     opacity: .6;
 }
 
-
 .thumbs.gap-xs {
 	margin-left: -5px;
 	margin-right: 0;
@@ -386,6 +382,9 @@ a:hover .whitelogo {
     opacity: 0.9;
 }
 
+.footer-up .col-md-offset-1 {
+margin-left: 1%;
+}
 
 #portfolioItemCarrousel .item img{
     display: block;

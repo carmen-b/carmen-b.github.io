@@ -1,13 +1,49 @@
-<div>
-    <%- yield %>
+ <div>
+        <%- yield %>
+    </div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 text-center">
+        <header>
+            <h1>Portfolio all in one</h1>
+            <p>This is where you can see all about the pretty stuff developed during the last years without looking back. Tada and yet it is just the beginning.</p>
+        </header>
+    </div>
+     <div class="col-md-2"></div>
 </div>
-<div class="row thumb-list">
-    <% var items=getAllItems(); for (var i=0 ; i < items.length; i++) { var item=items[i]; %>
-        <div class="col-sm-4 img-overlay">
-            <a href="<%= item.category + '/' + item.name %>.html" title="<%=item.title %>">
-                <i class="fa fa-plus"></i>
-                <img src="<%= item.category + '/' + item.name %>-thumb.jpg">
-            </a>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 portfolio">
+            <ul class="filter text-center">
+                <li>
+                    <a href="/portfolio/" class="active">All</a>
+                </li>
+                <li>
+                    <a href="/portfolio/branding/" class="">Branding</a>
+                </li>
+                <li>
+                    <a href="/portfolio/print/" class="">Print</a>
+                </li>
+                <li>
+                    <a href="/portfolio/stationery/" class="">Stationery</a>
+                </li>
+                <li>
+                    <a href="/portfolio/illustration/" class="">Illustration</a>
+                </li>
+            </ul>
         </div>
-        <% } %>
-</div>
+    </div>
+    </div>
+     
+     
+    <div class="row thumb-list">
+        <% var items=getAllItems(); for (var i=0 ; i < items.length; i++) { var item=items[i]; %>
+            <div class="col-sm-4 img-overlay">
+                <a href="<%= item.category + '/' + item.name %>.html" title="<%=item.title %>">
+                    <i class="fa fa-plus"></i>
+                    <img src="<%= item.category + '/' + item.name %>-thumb.jpg">
+                </a>
+            </div>
+            <% } %>
+    </div>
