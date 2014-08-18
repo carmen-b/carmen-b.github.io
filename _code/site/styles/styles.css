@@ -57,6 +57,8 @@ header p {
     line-height: 150%;
 }
 
+/* Main menu */
+
 .navbar li > a.nav-link {
     font-size: 15px;
     font-weight: 700;
