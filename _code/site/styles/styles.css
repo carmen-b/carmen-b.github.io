@@ -211,6 +211,27 @@ textarea.form-control {
     padding: 0 10px 10px 0;
 }
 
+/* Details page */
+
+.text-small {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.item-details {
+    list-style: none;
+    font-size: 16px;
+    line-height: 140%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.border-top {
+    border-top: 1px solid #CED7E0;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
 /* Contact page */
 
 .contact-left {
