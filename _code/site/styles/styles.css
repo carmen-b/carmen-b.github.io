@@ -305,6 +305,9 @@ textarea.form-control {
     color: #fff;
 }
 
+
+/* About */
+
 /* Footer */
 
 .footer {
@@ -457,4 +460,17 @@ margin-left: 1%;
     .contact-right {
         padding-left: 15px;
     }
+}
+
+.item-description p {
+    font-size: 18px;
+}
+
+.item-description li {
+    font-size: 16px;
+}
+
+.item-description ul {
+    list-style: none;
+    padding: 0;
 }
