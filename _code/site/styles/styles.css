@@ -84,12 +84,60 @@ header p {
     padding-top: 18px;
 }
 
+.navbar-header {
+    padding-top: 18px;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+
+.navbar-toggle {
+    background-color: #1ABB9C;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:#17A78B;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.dropdown.open {
+    background-color: #F5F7FA;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+}
+
+.dropdown.open > a {
+    background-color: #F5F7FA !important;
+    bottom: -1px;
+    z-index: 1001;
+}
+
+.dropdown-menu {
+    background-color: #F5F7FA;
+    left: -1px;
+}
+
 .dropdown-menu > li > a {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #E6E9ED;
     border-radius: none;
     background-clip: padding-box;
     color: #FFF;
-    background-color: #F5F7FA;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.dropdown-menu > li:first-child > a {
+    border: none;
 }
 
 .dropdown-menu > li > a:hover.nav-link {
@@ -99,6 +147,29 @@ header p {
 
 .dropdown-menu .nav-link {
     color: #FFF;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        height: auto;
+    }
+    
+    .navbar-header {
+        padding-top: 0;
+    }
+    
+    .navbar-brand {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    
+    .dropdown-menu > li > a {
+        border: none;
+    }
+    
+    .dropdown.open {
+        border: 1px solid #d9d9d9;
+    }
 }
 
 .page {
@@ -195,22 +266,25 @@ textarea.form-control {
     color: #C2C7CC;
 }
 
-.btn-default {
-    text-transform: uppercase;
+.btn {
     background-color: #1ABB9C;
     color: #FFF;
-    padding: 11px 20px 13px;
-    margin: 15px 0;
-    font-weight: 700;
-    letter-spacing: 0.02em;
     border: none;
 }
 
 .btn:hover {
     background-color:#17A78B;
     color: #FFF;
-    text-transform: uppercase;
 }
+
+.btn-default {
+    text-transform: uppercase;
+    padding: 11px 20px 13px;
+    margin: 15px 0;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
 
 .thumb-list img {
     width: 100%;
