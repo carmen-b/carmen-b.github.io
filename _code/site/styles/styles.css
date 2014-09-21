@@ -463,6 +463,8 @@ textarea.form-control {
 
 .whitelogo {
     margin-bottom: 8px;
+    margin-right: 16px;
+    float: left;
 }
 
 a:hover .whitelogo {
