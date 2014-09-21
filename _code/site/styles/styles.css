@@ -216,7 +216,7 @@ textarea.form-control {
     width: 100%;
 }
 
-.thumb-list div {
+.thumb-list > div {
     padding: 0 10px 10px 0;
 }
 
@@ -426,7 +426,7 @@ a:hover .whitelogo {
 .img-overlay a:hover .fa-plus {
     background-color: #1ABB9C;
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .footer-up .col-md-offset-1 {
@@ -496,3 +496,7 @@ margin-left: 1%;
     background-size: cover;
     height: 400px;
 }
+.category-header {
+    margin-bottom: 40px;
+}
+
