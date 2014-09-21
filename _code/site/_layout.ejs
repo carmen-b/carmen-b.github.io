@@ -70,13 +70,17 @@
     </header>
 
     <main>
-        <div class="container page">
-            <% if (current.path[0]=='portfolio' ) { %>
-                <%- partial( 'portfolio/_portfolio.ejs') %>
-                    <% } else { %>
-                        <%-yield %>
-                            <% } %>
-        </div>
+        <% if (current.path[0]=='index') { %>
+            <%-yield %>
+                <% } else { %>
+                    <div class="container page">
+                        <% if (current.path[0]=='portfolio') { %>
+                            <%- partial('portfolio/_portfolio.ejs') %>
+                                <% } else { %>
+                                    <%-yield %>
+                                        <% } %>
+                    </div>
+                    <% } %>
     </main>
 
     <footer>
@@ -88,7 +92,7 @@
                         <a href="/index.html">
                             <img class="whitelogo" src="/images/logowhite.png">
                         </a>
-                        <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                        <p>I’m Carmen Balaban a freelance graphic designer based in Romania, Baia Mare.</p>
                         <a href="/about.html" class="txt-btn">More about me</a>
                     </div>
                     <div class="col-md-3 col-sm-6 footer-latest">
@@ -130,7 +134,7 @@
                     </div>
                     <div class="col-md-4 col-md-offset-1">
                         <h4>Get in Touch</h4>
-                        <p>This should be the place where you can contact me. It's just as simple as that.</p>
+                        <p>You can reach me by phone, email or using the form in the contact page.</p>
                         <ul class="contact-list">
                             <li><i class="glyphicon glyphicon-phone"></i> +40 765 275 808</li>
                             <a href="mailto:contact@carmenbalaban.com"><i class="glyphicon glyphicon-envelope"></i> contact@carmenbalaban.com</a>

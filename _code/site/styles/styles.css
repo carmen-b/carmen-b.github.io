@@ -63,6 +63,10 @@ header p {
 
 /* Main menu */
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar li > a.nav-link {
     font-size: 15px;
     font-weight: 700;
@@ -104,6 +108,7 @@ header p {
 
 .filter {
     position: relative;
+    margin-top: 40px;
     margin-bottom: 40px;
     display: block;
     padding: 0;
@@ -190,7 +195,7 @@ textarea.form-control {
     color: #C2C7CC;
 }
 
-.btn-submit {
+.btn-default {
     text-transform: uppercase;
     background-color: #1ABB9C;
     color: #FFF;
@@ -473,4 +478,11 @@ margin-left: 1%;
 .item-description ul {
     list-style: none;
     padding: 0;
+}
+
+.home-image {
+    background-image: url(/images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
