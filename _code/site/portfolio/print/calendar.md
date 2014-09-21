@@ -1,8 +1,3 @@
-The layout for the two types of calendar was created with the purpose of a daily use so that notes can be taken. For the first one the format was an A4 and the secon one was larger for wall hanger. The technique used were InDesign, hand drawings and Illustrator. 
+The calendar layout was created with a practical purpose in mind - enabling notes to be taken on the calendar. The first calendar had a small, A4 format, while the second calendar was larger. 
 
----
-
-- 2013
-- Print
-- Ocean Evenimente
-- http://oceanhandmade.blogspot.com/2014/01/planner-ocean-evenimente-2014.html
+Created with Adobe Illustrator, InDesign  and pencil drawings.

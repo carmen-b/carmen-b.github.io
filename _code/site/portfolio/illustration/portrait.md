@@ -1,1 +1,1 @@
-The series of portraits are created on different techinques: paper, fine pencil, black ink, points black ink and lines.  
+The series of portraits are created with different techniques and on various paper types using pencils, black ink and nibs. 

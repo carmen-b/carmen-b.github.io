@@ -1,3 +1,3 @@
-It contains  a guidebook with information about the design created for the backpack for teens. I created the design for several backpacks  -Back to school - collections with catalogs of proposals, inspirations for Flying Impex and Pigna Romania
-
-Patterns created in Illustrator. 
+I created the design for several backpacks from the “Back to School” collection of Flying Impex / Pigna Romania. The work included proposals, inspiration, and a guidebook containing information about the designs.
+ 
+ Created with Adobe Illustrator.
