@@ -486,3 +486,7 @@ margin-left: 1%;
     background-size: cover;
     height: 400px;
 }
+
+.category-header {
+    margin-bottom: 40px;
+}
