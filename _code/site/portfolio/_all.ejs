@@ -1,6 +1,6 @@
- <div>
-        <%- yield %>
-    </div>
+<div>
+    <%- yield %>
+</div>
 
 <div class="row">
     <div class="col-md-3"></div>
@@ -10,7 +10,7 @@
             <p>This is where you can see all about the projects I’ve worked on during the last few years.</p>
         </header>
     </div>
-     <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
 </div>
 <div class="container">
     <div class="row">
@@ -34,16 +34,18 @@
             </ul>
         </div>
     </div>
-    </div>
-     
-     
-    <div class="row thumb-list">
-        <% var items=getAllItems(); for (var i=0 ; i < items.length; i++) { var item=items[i]; %>
-            <div class="col-sm-4 img-overlay">
+</div>
+
+
+<div class="row thumb-list">
+    <% var items=getAllItems(); for (var i=0 ; i < items.length; i++) { var item=items[i]; %>
+        <div class="col-sm-4">
+            <div class="img-overlay">
                 <a href="<%= item.category + '/' + item.name %>.html" title="<%=item.title %>">
                     <i class="fa fa-plus"></i>
                     <img src="<%= item.category + '/' + item.name %>-thumb.jpg">
                 </a>
             </div>
-            <% } %>
-    </div>
+        </div>
+        <% } %>
+</div>
