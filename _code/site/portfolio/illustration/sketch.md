@@ -1,1 +1,3 @@
-If I'm not .. or working on something client related chances are I'm trying to expand my artistic abilities. Here are a bunch of uncategorized illustrations that might not necessarily go together, but could very well be some of my favorite things I've done. I'm always exploring new styles and techniques to venture into different time eras. I find it fascinating how times change and trends come and go but certain things just stick because they are built on such solid foundation.
+If I'm not working on something client related, chances are I'm trying to expand some other styles. Here are some uncategorized scketches that might not necessarily go together, but could be very well among my favourite things. 
+
+There are different techniques used from colored dots, peonies in watercolor, portrait in charcoal, sights in colored fine liners to collages and black ink drawings.
