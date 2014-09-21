@@ -394,7 +394,11 @@ textarea.form-control {
 .about-page img {
     width: 100%;
     max-width: 200px;
-    margin-bottom: 20px;
+}
+
+.btn-resume {
+    width: 100%;
+    max-width: 200px;
 }
 
 /* Footer */
@@ -573,4 +577,10 @@ margin-left: 1%;
 .category-header {
     margin-bottom: 40px;
 }
+
+
+.about-page h1 {
+    text-align: center;
+}
+
 
