@@ -1,3 +1,3 @@
-The combination mark was designed for an event planning with a fresh spin for crafts and arts that is used for all its communication materials such as business cards, letterheads, T-Shirts, tote bags, advertising, digital and printed banners.
+The logo was designed for an event planning company. It was used for all the company’s communication materials such as business cards, letterheads, T-Shirts, tote bags, advertising, digital and printed banners. 
 
-The design was created by mixed Photoshop and Illustrator programs.
+Created with Adobe Illustrator and Photoshop.

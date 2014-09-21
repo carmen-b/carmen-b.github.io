@@ -1,3 +1,3 @@
-The first two works were realized for “Il Consiglio” magazine with the theme: art, culture and future. The third work was presented within the exhibition: Greenpeace Guarda Oltre at Fortezza da Basso in Florence. 
+The first two works were realized for the “Il Consiglio” magazine with the following theme: Art, Culture and Future. The third work was presented within the exhibition “Greenpeace Guarda Oltre” at the Fortezza da Basso in Florence, Italy. 
 
-The techniques used were illustrator, photoshop and pencil drawing.
+Created with Adobe Illustrator, Photoshop and pencil drawing.
