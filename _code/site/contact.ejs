@@ -12,13 +12,25 @@
             <div class="row">
                 <div class="col-sm-6 contact-left">
                     <h2>Leave a Message</h2>
-
-                    <form role="form" class="form-group contact-form" action="//forms.brace.io/contact@carmenbalaban.com" method="post">
+                    
+                    <div class="contact-sent alert alert-success">Message was sent successfully.</div>
+                    
+                    <form role="form" class="contact-form" method="post">
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="text" name="name" class="form-control" placeholder="Name (Required)" name="inputBox" />
-                                <input type="email" name="_replyto" class="form-control" placeholder="Email (Required)">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name (Required)" 
+                                        data-bv-notempty data-bv-notempty-message="Please enter your name">
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <input type="email" name="_replyto" class="form-control" placeholder="Email (Required)"
+                                        data-bv-notempty  data-bv-notempty-message="Please enter your email address" data-bv-emailaddress>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -26,8 +38,8 @@
                                 <textarea name="message" class="form-control" placeholder="Enter your message..."></textarea>
                             </div>
                         </div>
-                        <input type="hidden" name="_next" value="//www.carmenbalaban.com/contact-thanks.html" />
-                        <button type="submit" class="btn btn-default">Submit Message</button>
+                        <input type="hidden" name="_next" value="//www.carmenbalaban.com/contact.html?sent=1" />
+                        <input type="submit" class="btn btn-default" value="Submit Message">
                     </form>
                 </div>
 
@@ -37,7 +49,7 @@
                     <h3>Carmen Balaban</h3>
                     <ul class="contact-list">
                         <li><i class="glyphicon glyphicon-phone"></i> +40 765 275 808</li>
-                        <a href="#"><i class="glyphicon glyphicon-envelope"></i> contact@carmenbalaban.com
+                        <a class="email-address"><i class="glyphicon glyphicon-envelope"></i> </a>
                    </a>
                     </ul>
                     <div class="social-network">

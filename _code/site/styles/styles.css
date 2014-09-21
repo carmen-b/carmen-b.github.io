@@ -220,17 +220,10 @@ header p {
 }
 
 .form-group {
-    color: #283645;
-    font-size: 14px;
-    line-height: 25px;
-    vertical-align: middle;
-    position: relative;
-    width: 100%;
-    border-radius: 3px;
+    margin-bottom: 15px;
 }
 
-.form-control {
-    margin-bottom: 15px;
+.form-control, .has-success .form-control, .has-success .form-control:focus {
     background-color: #F8FAFD;
     border-radius: 3px;
     height: 40px;
@@ -251,7 +244,7 @@ textarea.form-control {
 
 .form-control:focus {
     border: 1px solid #BCC7D1;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -267,7 +260,7 @@ textarea.form-control {
     color: #C2C7CC;
 }
 
-.btn {
+.btn, .btn[disabled] {
     background-color: #1ABB9C;
     color: #FFF;
     border: none;
@@ -339,6 +332,10 @@ textarea.form-control {
 
 .contact-list li {
     margin-bottom: 2px;
+}
+
+.contact-sent {
+    display: none;
 }
 
 .contact-main {
