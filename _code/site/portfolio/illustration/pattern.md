@@ -1,2 +1,0 @@
-Description patterns
-with images
