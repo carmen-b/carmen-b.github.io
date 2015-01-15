@@ -15,7 +15,7 @@ $(function () {
         .append(address);
 
     $('.contact-form')
-        .attr('action', '//forms.brace.io/' + address)
+        .attr('action', '//formspree.io/' + address)
         .bootstrapValidator();
 
 
