@@ -1,0 +1,14 @@
+{
+  "name": "carmen-b-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modernized static site build for carmenbalaban.com using Eleventy.",
+  "scripts": {
+    "build": "eleventy && node tools/copy-portfolio-images.js",
+    "dev": "node tools/copy-portfolio-images.js && eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "markdown-it": "^14.1.0"
+  }
+}

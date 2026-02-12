@@ -1,0 +1,45 @@
+---
+layout: layout.njk
+permalink: /portfolio/index.html
+title: Portfolio | Carmen Balaban
+---
+<div class="container page">
+  <div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center">
+      <header>
+        <h1>Portfolio overview</h1>
+        <p>This is where you can see all about the projects I’ve worked on during the last few years.</p>
+      </header>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 portfolio">
+        <ul class="filter text-center">
+          <li><a href="/portfolio/" class="active">All</a></li>
+          {% for category in portfolio.categories %}
+          <li><a href="/portfolio/{{ category.slug }}/">{{ category.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row thumb-list">
+    {% for item in portfolio.items %}
+    <div class="col-sm-4">
+      <div class="img-overlay">
+        <a href="{{ item.category }}/{{ item.slug }}.html" title="{{ item.title }}">
+          <i class="fa fa-plus"></i>
+          <img src="{{ item.category }}/{{ item.slug }}-thumb.jpg" alt="{{ item.title }} thumbnail">
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
