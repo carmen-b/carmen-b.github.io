@@ -1,18 +1,29 @@
-const markdownIt = require("markdown-it");
-
 module.exports = function (eleventyConfig) {
-  const md = markdownIt({ html: true, breaks: false, linkify: true });
-
-  eleventyConfig.addFilter("markdown", (value) => md.render(value || ""));
-  eleventyConfig.addFilter("byCategory", (items, categorySlug) =>
-    (items || []).filter((item) => item.data.category === categorySlug),
-  );
-
   eleventyConfig.addCollection("portfolioItems", (collectionApi) =>
     collectionApi
       .getFilteredByGlob("src/portfolio/*/*.md")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0)),
   );
+  eleventyConfig.addCollection("portfolioCategories", (collectionApi) => {
+    const items = collectionApi.getFilteredByTag("portfolioItems");
+    const categoryMap = new Map();
+
+    for (const item of items) {
+      const { category, categoryLabel, categoryHeading, categoryDescription, categoryOrder } = item.data;
+      if (!categoryMap.has(category)) {
+        categoryMap.set(category, {
+          slug: category,
+          label: categoryLabel,
+          heading: categoryHeading,
+          description: categoryDescription,
+          order: categoryOrder,
+          tag: `portfolio-${category}`,
+        });
+      }
+    }
+
+    return Array.from(categoryMap.values()).sort((a, b) => (a.order || 0) - (b.order || 0));
+  });
 
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/files": "files" });

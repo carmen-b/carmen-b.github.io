@@ -22,7 +22,7 @@ title: Portfolio | Carmen Balaban
       <div class="col-sm-12 portfolio">
         <ul class="filter text-center">
           <li><a href="/portfolio/" class="active">All</a></li>
-          {% for category in portfolioCategories %}
+          {% for category in collections.portfolioCategories %}
           <li><a href="/portfolio/{{ category.slug }}/">{{ category.label }}</a></li>
           {% endfor %}
         </ul>
