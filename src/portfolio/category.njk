@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 pagination:
-  data: portfolio.categories
+  data: portfolioCategories
   size: 1
   alias: category
 permalink: "/portfolio/{{ category.slug }}/index.html"
@@ -11,16 +11,17 @@ eleventyComputed:
 <div class="container page">
   <div class="category-header row">
     <div class="col-md-6 col-md-offset-3 text-center">
-      {{ category.markdown | markdown | safe }}
+      <h2>{{ category.heading }}</h2>
+      <p>{{ category.description }}</p>
     </div>
   </div>
   <div class="row thumb-list">
-    {% for item in category.items %}
+    {% for item in collections.portfolioItems | byCategory(category.slug) %}
     <div class="col-sm-4">
       <div class="img-overlay">
-        <a href="{{ item.slug }}.html" title="{{ item.title }}">
+        <a href="{{ item.data.slug }}.html" title="{{ item.data.title }}">
           <i class="fa fa-plus"></i>
-          <img src="{{ item.slug }}-thumb.jpg" alt="{{ item.title }} thumbnail">
+          <img src="{{ item.data.slug }}-thumb.jpg" alt="{{ item.data.title }} thumbnail">
         </a>
       </div>
     </div>

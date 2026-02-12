@@ -1,1 +1,0 @@
-The series of portraits are created with different techniques and on various paper types using pencils, black ink and nibs. 

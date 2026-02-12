@@ -130,7 +130,7 @@
 
     <div class="footer">
       <div class="container">
-        <p class="pull-left">@ 2014 Carmen Balaban. All rights reserved.</p>
+        <p class="pull-left">@ {{ site.startYear }}{% if site.currentYear > site.startYear %} - {{ site.currentYear }}{% endif %} Carmen Balaban. All rights reserved.</p>
         <ul class="footer-navbar pull-right">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/portfolio/">Portfolio</a></li>

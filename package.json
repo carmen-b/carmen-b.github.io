@@ -4,8 +4,8 @@
   "private": true,
   "description": "Modernized static site build for carmenbalaban.com using Eleventy.",
   "scripts": {
-    "build": "eleventy && node tools/copy-portfolio-images.js",
-    "dev": "node tools/copy-portfolio-images.js && eleventy --serve"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

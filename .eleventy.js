@@ -4,12 +4,22 @@ module.exports = function (eleventyConfig) {
   const md = markdownIt({ html: true, breaks: false, linkify: true });
 
   eleventyConfig.addFilter("markdown", (value) => md.render(value || ""));
+  eleventyConfig.addFilter("byCategory", (items, categorySlug) =>
+    (items || []).filter((item) => item.data.category === categorySlug),
+  );
+
+  eleventyConfig.addCollection("portfolioItems", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("src/portfolio-items/**/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0)),
+  );
 
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/files": "files" });
   eleventyConfig.addPassthroughCopy({ "src/libs": "libs" });
   eleventyConfig.addPassthroughCopy({ "src/styles": "styles" });
   eleventyConfig.addPassthroughCopy({ "src/scripts": "scripts" });
+  eleventyConfig.addPassthroughCopy({ "src/portfolio-assets": "portfolio" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   return {

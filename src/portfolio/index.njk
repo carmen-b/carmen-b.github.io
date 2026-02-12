@@ -22,7 +22,7 @@ title: Portfolio | Carmen Balaban
       <div class="col-sm-12 portfolio">
         <ul class="filter text-center">
           <li><a href="/portfolio/" class="active">All</a></li>
-          {% for category in portfolio.categories %}
+          {% for category in portfolioCategories %}
           <li><a href="/portfolio/{{ category.slug }}/">{{ category.label }}</a></li>
           {% endfor %}
         </ul>
@@ -31,12 +31,12 @@ title: Portfolio | Carmen Balaban
   </div>
 
   <div class="row thumb-list">
-    {% for item in portfolio.items %}
+    {% for item in collections.portfolioItems %}
     <div class="col-sm-4">
       <div class="img-overlay">
-        <a href="{{ item.category }}/{{ item.slug }}.html" title="{{ item.title }}">
+        <a href="/portfolio/{{ item.data.category }}/{{ item.data.slug }}.html" title="{{ item.data.title }}">
           <i class="fa fa-plus"></i>
-          <img src="{{ item.category }}/{{ item.slug }}-thumb.jpg" alt="{{ item.title }} thumbnail">
+          <img src="{{ item.data.category }}/{{ item.data.slug }}-thumb.jpg" alt="{{ item.data.title }} thumbnail">
         </a>
       </div>
     </div>
