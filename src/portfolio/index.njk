@@ -3,43 +3,34 @@ layout: layout.njk
 permalink: /portfolio/index.html
 title: Portfolio | Carmen Balaban
 ---
-<div class="container page">
-  <div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6 text-center">
-      <header>
-        <h1>Portfolio overview</h1>
-        <p>This is where you can see all about the projects I’ve worked on during the last few years.</p>
-      </header>
-    </div>
-    <div class="col-md-3"></div>
-  </div>
+<section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 portfolio">
-        <ul class="filter text-center">
-          <li><a href="/portfolio/" class="active">All</a></li>
-          {% for category in collections.portfolioCategories %}
-          <li><a href="/portfolio/{{ category.slug }}/">{{ category.label }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
+    <div class="section-header centered">
+      <h1>Portfolio</h1>
+      <p>A curated selection of branding, print, stationery, and illustration projects.</p>
     </div>
-  </div>
 
-  <div class="row thumb-list">
-    {% for item in collections.portfolioItems %}
-    <div class="col-sm-4">
-      <div class="img-overlay">
+    <nav aria-label="Portfolio filters">
+      <ul class="filter-list">
+        <li><a href="/portfolio/" class="is-active">All</a></li>
+        {% for category in collections.portfolioCategories %}
+        <li><a href="/portfolio/{{ category.slug }}/">{{ category.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="portfolio-grid">
+      {% for item in collections.portfolioItems %}
+      <article class="portfolio-card">
         <a href="/portfolio/{{ item.data.category }}/{{ item.data.slug }}.html" title="{{ item.data.title }}">
-          <i class="fa fa-plus"></i>
           <img src="{{ item.data.category }}/{{ item.data.slug }}-thumb.jpg" alt="{{ item.data.title }} thumbnail">
+          <div class="portfolio-meta">
+            <h2>{{ item.data.title }}</h2>
+            <p>{{ item.data.categoryLabel }}</p>
+          </div>
         </a>
-      </div>
+      </article>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
-</div>
+</section>

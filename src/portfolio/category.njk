@@ -8,23 +8,38 @@ permalink: "/portfolio/{{ category.slug }}/index.html"
 eleventyComputed:
   title: "{{ category.label }} Portfolio | Carmen Balaban"
 ---
-<div class="container page">
-  <div class="category-header row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-      <h2>{{ category.heading }}</h2>
+<section class="section">
+  <div class="container">
+    <div class="section-header centered">
+      <h1>{{ category.heading }}</h1>
       <p>{{ category.description }}</p>
     </div>
-  </div>
-  <div class="row thumb-list">
-    {% for item in collections[category.tag] %}
-    <div class="col-sm-4">
-      <div class="img-overlay">
+
+    <nav aria-label="Portfolio filters">
+      <ul class="filter-list">
+        <li><a href="/portfolio/">All</a></li>
+        {% for categoryItem in collections.portfolioCategories %}
+        <li>
+          <a href="/portfolio/{{ categoryItem.slug }}/" {% if categoryItem.slug == category.slug %}class="is-active"{% endif %}>{{ categoryItem.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="portfolio-grid">
+      {% for item in collections.portfolioItems %}
+      {% if item.data.category == category.slug %}
+      <article class="portfolio-card">
         <a href="{{ item.data.slug }}.html" title="{{ item.data.title }}">
-          <i class="fa fa-plus"></i>
           <img src="{{ item.data.slug }}-thumb.jpg" alt="{{ item.data.title }} thumbnail">
+          <div class="portfolio-meta">
+            <h2>{{ item.data.title }}</h2>
+            <p>{{ category.label }}</p>
+          </div>
         </a>
-      </div>
+      </article>
+      {% endif %}
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
-</div>
+</section>
